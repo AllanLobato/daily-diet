@@ -1,17 +1,18 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-// import { Groups } from "@screens/Groups";
-// import { NewGroup } from "@screens/NewGroup";
-// import { Players } from "@screens/Players";
+import { Home } from "@screens/Home";
+import { FoodCreation } from "@screens/FoodCreation";
+import { EditionScreen } from "@screens/EditionScreen";
 import React from "react";
+
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export function AppRoutes() {
     return (
         <Navigator screenOptions={{headerShown: false}}>
-            <Screen name="groups" component={Groups} />
-            <Screen name="players" component={Players} />
-            <Screen name="new" component={NewGroup} />
+            <Screen name="home" component={Home} />
+            <Screen name="edit" component={EditionScreen} />
+            <Screen name="creation" component={FoodCreation} />z
         </Navigator>
     );
 }
