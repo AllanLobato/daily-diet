@@ -12,7 +12,7 @@ export function AppRoutes() {
         <Navigator screenOptions={{headerShown: false}}>
             <Screen name="home" component={Home} />
             <Screen name="edit" component={EditionScreen} />
-            <Screen name="creation" component={FoodCreation} />z
+            <Screen name="creation" component={FoodCreation} />
         </Navigator>
     );
 }

@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled  from "styled-components/native";
 import { CaretLeft } from "phosphor-react-native";
 
 export const Container = styled.View`
@@ -10,8 +10,8 @@ export const Container = styled.View`
     `;
 
 export const Logo = styled.Image`
-    width: 82px;
-    height: 37px;
+    width: 46px;
+    height: 55px;
     `;
 
 export const BackButton = styled.TouchableOpacity`
