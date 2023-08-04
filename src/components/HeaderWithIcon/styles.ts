@@ -6,19 +6,29 @@ export const Container = styled.View`
 
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     `;
 
 export const Logo = styled.Image`
-    width: 46px;
-    height: 55px;
+    width: 82px;
+    height: 37px;
+    `;
+
+export const Avatar = styled.Image`
+    width: 40px;
+    height: 40px;
     `;
 
 export const BackButton = styled.TouchableOpacity`
     flex: 1;
 `;
 
-export const BackIcon = styled(CaretLeft).attrs(({theme}) => ({
-    color: theme.COLORS.WHITE,
+export const Title = styled.Text`
+    color: #000;
+    font-size: 32px;
+    `;
+
+export const BackIcon = styled(CaretLeft).attrs(({ theme }) => ({
+    color: theme.COLORS.GRAY_700,
     size: 32
-    }))``;
+}))``;
